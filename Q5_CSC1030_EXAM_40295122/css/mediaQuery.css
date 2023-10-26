@@ -1,0 +1,23 @@
+/* This makes the page responsive*/
+@media screen and (max-width: 600px) {
+    #wrapper {
+        width: 600px;
+    }
+    
+    h1{
+        font-size: 3em;
+    }
+    
+    .columns {
+        clear:both;
+        width:100%;
+    }
+    
+    
+}
+
+@media screen and (min-width: 960px) {
+    #wrapper {
+        width: 960px;
+    }
+}

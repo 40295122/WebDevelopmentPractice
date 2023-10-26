@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>40295122</title>
+
+        <script type = "text/javascript">
+
+            var myTimer;
+            
+            var duration;
+
+            function initiateTimer() {
+                duration = document.getElementById('timerDuration').value;
+                document.getElementById('timerDisplay').innerHTML = duration;
+                document.getElementById('timerPosition').style.display = 'initial';
+                
+                myTimer = setInterval('countdown()', 1000);   
+            }
+
+            function stopTimer() {
+                clearInterval(myTimer);
+                document.getElementById('timerPosition').innerHTML = "Timer Stopped";
+
+            }
+
+            function countdown() {
+                duration--;
+
+                if (duration>=0) {
+                    document.getElementById('timerDisplay').innerHTML = duration;
+                } else {
+                    stopTimer();
+                }
+            }
+
+
+
+        </script>
+
+
+    </head>
+    <body>
+
+        <label for="timerDuration">Enter starting value: </label>
+        <input type="number" id="timerDuration"><br> <br>
+        <button onclick="initiateTimer();">Start Timer</button>
+        <button onclick="stopTimer();">Stop Timer</button>
+        <br><br>
+        <p id="timerPosition" style="display:none;">
+            There are <span id="timerDisplay"></span> seconds left
+        </p>
+
+
+    </body>
+</html>

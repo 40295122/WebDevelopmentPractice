@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body {
+    background-color:black;
+    font-family: Arial;
+
+
+}
+.wrapper{
+    background-image: linear-gradient(180deg, white, lightyellow);
+    width:90%;
+    margin: auto;
+    overflow:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.title{
+    background-image: url("../../images/background.jpeg");
+    /* source: https://www.pexels.com/photo/lake-surrounded-by-pine-trees-2900786/*/
+    background-size: auto;
+    height:255px;
+    padding: 60px;
+    border: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: darkolivegreen;
+
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    text-shadow: 21px 10px 3px black;
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+    font-style: italic;
+    font-size: 4em;
+}
+
+p{
+    padding-top: 20px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 1px 1px black;
+    font-style: italic;
+}
+h3{
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+
+}
+
+.columns {
+
+    opacity: 94%;
+    width: 50%;
+    float: left;
+    height:100%;
+
+
+    padding: 10px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+
+
+#column1{
+    display: block;
+    margin: 0px;
+    padding:20px;
+    text-align: left;
+    height:inherit;
+
+}
+.centre{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+
+#column2{
+
+    height:inherit;
+    padding:20px;
+}
+
+ul{
+    padding-left: 60px;
+
+}
+
+li {
+    font-family: Arial;
+    font-size: 16px;
+    text-align:left;
+
+}
+
+#castleImg{
+    border: 1px white;
+    border-style: ridge;
+    border-radius: 8px;
+
+
+}
+
+#footer{
+    float:left;
+    width:100%;
+    background-color: darkolivegreen;
+    color:white;
+    text-align: center;
+
+}
+
+a:hover{
+    color:red;
+
+}
+a:link{
+    color:blue;
+}
+
+#nav {
+    font-weight: bold;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#nav li {
+    float: left;
+    width:33%;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover{
+    color:darkolivegreen;
+}
+
+

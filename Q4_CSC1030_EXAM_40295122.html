@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>40295122</title>
+
+        <script type = "text/javascript">
+
+            var nums;
+            var numArray = [];
+            var answer;
+
+
+            function enterNums(){
+                nums = document.getElementById('numberInput').value;
+
+                numArray.push(nums);
+
+                document.getElementById('enterNums').innerHTML += nums + " ";
+
+                console.log(numArray);
+
+            }
+
+            function sum(){
+
+                for (var i = 0; i<(numArray.length-1); i++){
+                    var thisNum = numArray[i];
+                    var next = numArray[i+1];
+                    num1 = parseInt(thisNum); 
+                    num2 = parseInt(next);
+                    answer = num1 +num2;
+                }
+
+
+                document.getElementById('ans').innerHTML = answer;
+
+            }
+
+            function average(){
+
+                for (var i = 0; i<(numArray.length-1); i++){
+                    var thisNum = numArray[i];
+                    var next = numArray[i+1];
+                    num1 = parseInt(thisNum); 
+                    num2 = parseInt(next);
+                    answer = num1 * num2;
+                }
+
+
+                document.getElementById('ans').innerHTML = answer;
+
+
+            }
+
+        </script>
+
+
+    </head>
+    <body>
+
+        <label for="numberInput">Input Numbers: </label>
+        <input type="number" id="numberInput"><br><br>
+        <button onclick = "enterNums();">Enter Numbers</button>
+        <p>The numbers entered are: <span id ="enterNums"></span></p>
+        <br>
+        <button onclick="sum();">Sum</button>
+        <button onclick="average();">Average</button>
+        <p >The answer is: <span id = "ans"></span></p>
+    </body>
+</html>
